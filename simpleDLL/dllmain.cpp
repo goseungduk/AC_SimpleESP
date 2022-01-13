@@ -15,6 +15,8 @@
 /* (3D coordinates) x (mvpMatrix) = (camera 좌표계) */
 /* camera 좌표의 x,y 로 플레이어의 위치를, z 로 원근을 표시 */
 float mvpMatrix[16]; // viewMatirx => camera coordinate system 을 위한 것
+int SinglePlayStart = 1;
+int MultiPlayStart = 0;
 DWORD viewMatrixAddr = 0x501AE8;
 
 bool WorldToScreen(Vec3 enemyPos, Vec2 &screen, int windowWidth, int windowHeight) {
@@ -63,7 +65,7 @@ int MainThread() {
 		memcpy(&mvpMatrix, (PBYTE*)(viewMatrixAddr), sizeof(mvpMatrix));
 
 		/* Get Enemy Entity Pos */
-		for (DWORD i = 1; i < amountOfPlayers; i++) {
+		for (DWORD i = SinglePlayStart; i < amountOfPlayers; i++) {
 			Vec2 vEnemy, vEnemyHead;
 			DWORD enemy = *(DWORD*)(enemyList + 0x4 * i);
 
