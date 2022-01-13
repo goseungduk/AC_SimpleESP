@@ -8,5 +8,8 @@
 
 ### 시연영상
 
-<iframe width="640" height="360" src="https://www.youtube.com/watch?v=N_FsrF_b41Y"  
- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+![ezgif-6-2ad7846daf](https://user-images.githubusercontent.com/42366390/149318145-e0f6d608-c7e5-43bc-a566-54e53ecfb6d3.gif)
+
+[https://www.youtube.com/watch?v=N_FsrF_b41Y](https://www.youtube.com/watch?v=N_FsrF_b41Y)
+
+
