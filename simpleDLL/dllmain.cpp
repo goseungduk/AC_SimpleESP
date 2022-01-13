@@ -58,7 +58,7 @@ int MainThread() {
 		/* 아무도 없을 시 바로 종료 */
 		if (amountOfPlayers <= 1) {
 			MessageBox(NULL, "No Players", "Error", MB_OK);
-			return 0;
+			continue;
 		}
 
 		HDC hdcAC_client = GetDC(hwndAC_Client);
